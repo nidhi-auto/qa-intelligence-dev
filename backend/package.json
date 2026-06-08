@@ -1,0 +1,23 @@
+{
+  "name": "qalytics-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "seed": "node dist/seed/seed.js",
+    "package": "npm run build && cd dist && zip -r ../api.zip ."
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.826.0",
+    "@aws-sdk/client-dynamodb": "^3.826.0",
+    "@aws-sdk/lib-dynamodb": "^3.826.0",
+    "zod": "^3.25.56"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.149",
+    "@types/node": "^22.15.21",
+    "esbuild": "^0.25.5",
+    "typescript": "~5.8.3"
+  }
+}

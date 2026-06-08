@@ -1,0 +1,11 @@
+# Launchpad preview runtime (managed by platform — do not read or commit)
+.platform/
+node_modules/
+dist/
+build/
+.env
+.env.*
+preview.log
+ecosystem.preview.cjs
+ecosystem.preview.js
+.preview-package.sha256
