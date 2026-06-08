@@ -4,6 +4,7 @@ dist/
 build/
 .env
 .env.*
+!.env.example
 preview.log
 ecosystem.preview.cjs
 ecosystem.preview.js
